@@ -12,11 +12,11 @@ def go(cross_paths=False):
         return af, bf
     point, facing = (0,0), (0, 1)
     for turn in turns.split(', '):
-        way, dis = turn[0], int(turn[1:])
+        dis = int(turn[1:])
         (xp, yp), (xf, yf) = point, facing
-        if way == 'R':
+        if turn[0] == 'R':
             yf, xf = rotate(yf, xf)
-        elif way == 'L':
+        else:
             xf, yf = rotate(xf, yf)
         if cross_paths:
             for _ in range(0, dis):

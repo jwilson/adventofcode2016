@@ -1,5 +1,5 @@
 import md5
-input = 'uqwqemis'
+input = ''
 input_to_hash = input
 i = 0
 found_eight = False

@@ -12,7 +12,6 @@ for line in input:
 				bab = '{}{}{}'.format(chunk[i+1], chunk[i], chunk[i+1])
 				for inner_chunk in in_brackets:
 					if bab in inner_chunk:
-						print aba, bab, inner_chunk
 						correct += 1
 						keep_going = False
 						break
